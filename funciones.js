@@ -13,7 +13,7 @@ function validarFormulario() {
 
   document.getElementById('mi-enlace').addEventListener('click', function(event) {
     event.preventDefault();
-    alert('¡Has hecho clic en el enlace!');
+    alert('¡Dale clic en el enlace!');
   });
   
   

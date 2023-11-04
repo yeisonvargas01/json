@@ -157,3 +157,23 @@
     font-family: 'Calibri';
     color: white;
   }
+
+
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.quienessomos-container {
+  width: 30%; 
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 60%; /* Ajusta el ancho según tus preferencias */
+  position: relative;
+}

@@ -1,77 +1,50 @@
-/* Estilos agregados */
-.text-platzi {
-    color: #97c96e !important;
-  }
-  
-  .btn-platzi {
-    background-color: #97c96e;
-    color: white;
-  }
-  .btn-platzi:hover {
-    background-color: #82ad36;
-  }
-  /* Fin estilos agregados */
-  /* estilos del header */
-  #header img {
-    width: 80px;
-  }
-  /*Fin estilos del header */
-  /* estilos del carousel */
-  #main .carousel-inner img {
-    max-height: 70vh;
-    object-fit: cover;
-    filter: grayscale(70%);
-  }
-  #carousel {
-    position: relative;
-  }
-  #carousel .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    z-index: 1;
-  }
-  #carousel .overlay .container,
-  #carousel .overlay .row {
-    height: 100%;
-  }
-  /*Fin estilos del carousel */
-  /* Estilos Tarjetas */
-  .card {
-    border: none;
-  }
-  .card img {
-    height: 300px;
-  }
-  /* Fin stilos Tarjetas */
-  /* Estilos del lugar y fecha */
-  #placeTime {
-    background-color: #343a40;
-    color: rgb(241, 232, 232);
-  }
-  #placeTime img {
-    max-width: 100%;
-  }
-  /*Fin Estilos del lugar y fecha */
-  /*Estilos del formulario*/
-  #orador abbr {
-    color: #82ad36;
-    text-decoration: none;
-  }
-  /*Fin Estilos del formulario*/
-  /* estilos del footer */
-  #footer {
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
-  }
-  #footer a {
-    color: white;
-    text-decoration: none;
-  }
-  #footer a:hover {
-    color: aqua;
-  }
-  /*Fin estilos del header */
+.navbar {
+    background-color: #343a40; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745; 
+}
+
+
+#inicio {
+    background-color: #0f71d3; 
+    padding: 50px 0; 
+}
+
+.section-title {
+    font-size: 36px; 
+}
+
+
+#servicios {
+    background-color: #f11414; 
+    padding: 50px 0; 
+}
+
+.col-md-4 {
+    margin-bottom: 20px; 
+}
+
+
+footer {
+    background-color: #343a40; 
+    color: hsl(138, 78%, 42%); 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+
+.servicio {
+    border: 1px solid #cccccc; /* Agrega bordes a los cuadros de servicio */
+    padding: 20px; /* Agrega espaciado interno a los cuadros de servicio */
+}
+
+
+.container {
+    text-align: center; /* Alinea el texto en el área de contacto al centro */
+}

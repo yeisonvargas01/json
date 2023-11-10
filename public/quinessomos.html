@@ -5,42 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Quiénes Somos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <title>Universidad en la nube</title>
 </head>
 
 <body>
-    <div class="quienessomos-container">
-        <h1>Quiénes Somos</h1>
-        <p>En la Institución Universitaria de Computación en la Nube, creemos en la importancia de la ética en la
-            educación.
-            Nuestra universidad se esfuerza por proporcionar un ambiente de aprendizaje basado en valores sólidos y
-            principios éticos.</p>
+    <header class="animado">
+        <div class="header_nav">
+            <div class="contenedor">
+                <h1>Institución Universitaria de computación en la nube</h1>
+                <nav>
+                    <a href="https://www.uco.edu.co/" target="_blank">Inicio</a>
+                    <a href="https://www.uco.edu.co/biblioteca/Paginas/default.aspx" target="_blank">Biblioteca</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
 
-        <p>Nuestra misión es transformar vidas a través de la educación, fomentando el conocimiento, la creatividad y el
-            pensamiento crítico en nuestros estudiantes. Nos comprometemos a preparar a nuestros graduados para
-            enfrentar los desafíos del mundo real y contribuir positivamente a la sociedad.</p>
-    </div>
 
-    <style>
-        .quienessomos-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        <div class="quienessomos-container">
+            <h1>Quiénes Somos</h1>
+            <p>En la Institución Universitaria de Computación en la Nube,
+                creemos en la importancia de la ética en la educación.</p>
+            <p>
+                Nuestra universidad se esfuerza por proporcionar un ambiente de aprendizaje
+                basado en valores sólidos y principios éticos.</p>
 
-        h1 {
-            color: #007bff;
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+            <p>Nuestra misión es transformar vidas a través de la educación, fomentando el conocimiento, la creatividad
+                y el pensamiento crítico en nuestros estudiantes.
+            <p>Nos comprometemos a preparar a nuestros graduados para
+                enfrentar los desafíos del mundo real y contribuir positivamente a la sociedad.</p>
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-    </style>
+        </div>
+
+
+        <section class="banner contenedor">
+            <section class="banner_titulo">
+                <h2>¡Bienvenido a tu <br>segundo hogar!</br></h2>
+                <a href="#registro" class="Estudia_con_nosotros">Estudia con nosotros</a>
+            </section>
+            <div class="banner_imagen">
+                <img src="Libros.png" alt="">
+            </div>
+            <div class="efectos">
+                <div class="efecto"></div>
+                <div class="efecto"></div>
+                <div class="efecto"></div>
+                <div class="efecto"></div>
+                <div class="efecto"></div>
+            </div>
+
+
+        </section>
+        <section class="registro container" id="registro">
+            <form action="" onsubmit="validarFormulario()">
+                <h4>Formulario de registro</h4>
+                <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <input class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+                <input class="form-control" name="correo" id="correo" placeholder="Ingrese su correo">
+                <br><br>
+                <input class="btn btn-primary" type="submit" value="Registrar">
+            </form>
+
+        </section>
+
+        <script>
+            function validarFormulario() {
+                var nombres = document.getElementById('nombres').value;
+                var apellidos = document.getElementById('apellidos').value;
+                var correo = document.getElementById('correo').value;
+
+                if (nombres === '' || apellidos === '' || correo === '') {
+                    alert('Por favor complete todos los campos');
+                    return false;
+                }
+
+                return true;
+            }
+
+            document.getElementById('mi-enlace').addEventListener('click', function (event) {
+                event.preventDefault();
+                alert('¡Dale clic en el enlace!');
+            });
+        </script>
+
+
+
+    </header>
 </body>
 
 </html>

@@ -146,45 +146,46 @@
     </section>
 
     <!--------------------FOOTER----------------------->
+    <div class="efectos">
+        <div class="efecto"></div>
+        <div class="efecto"></div>
+        <div class="efecto"></div>
+        <div class="efecto"></div>
+        <div class="efecto"></div>
+    </div>
 
-    <footer class="seccion-bd-container">
-        <div class="footer-contaner-bd-grid">
-            <div class="footer__content">
-                <h3 class="footer__title title-1">Services</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Servicio #1</a></li>
-                    <li><a href="#" class="footer__link">Servicio #2</a></li>
-                    <li><a href="#" class="footer__link">Servicio #3</a></li>
-                </ul>
-            </div>
+        </section>
+        <section class="registro container" id="registro">
+            <form action="" onsubmit="validarFormulario()">
+                <h4>Formulario de registro</h4>
+                <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <input class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+                <input class="form-control" name="correo" id="correo" placeholder="Ingrese su correo">
+                <br><br>
+                <input class="btn btn-primary" type="submit" value="Registrar">
+            </form>
 
-            <div class="footer__content ">
-                <h3 class="footer__title title-2 ">Information</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Eventos</a></li>
-                    <li><a href="#" class="footer__link">Contactanos</a></li>
-                    <li><a href="#" class="footer__link">Política</a></li>
-                    <li><a href="#" class="footer__link">Terminos</a></li>
-                </ul>
-            </div>
+        </section>
 
-            <div class="footer__content">
-                <h3 class="footer__title title-3">Adress</h3>
-                <ul class="footer__container__direction">
-                    <li><a href="#" class="footer__link andres">Ciudad - Pais</a></li>
-                    <li><a href="#" class="footer__link andres">Direccion</a></li>
-                    <li><a href="#" class="footer__link andres">000 - 000 - 000</a></li>
-                    <li><a href="#" class="footer__link andres">hola como estas</a></li>
-                </ul>
-            </div>
+         <script>
+            function validarFormulario() {
+                var nombres = document.getElementById('nombres').value;
+                var apellidos = document.getElementById('apellidos').value;
+                var correo = document.getElementById('correo').value;
 
-            <div class="footer-content">
-                <div class="social-media">
-                    <a href="https://www.facebook.com/informateuneg" class="footer__social"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://twitter.com/Uneginforma" class="footer__social"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/informateuneg/" class="footer__social"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+                if (nombres === '' || apellidos === '' || correo === '') {
+                    alert('Por favor complete todos los campos');
+                    return false;
+                }
+
+                return true;
+            }
+
+            document.getElementById('mi-enlace').addEventListener('click', function (event) {
+                event.preventDefault();
+                alert('¡Dale clic en el enlace!');
+            });
+        </script>
 
         </div>
     </footer>

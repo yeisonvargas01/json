@@ -142,7 +142,7 @@ p{
   padding: 10px;
 }
 .row{
-  margin-top: 20%;
+  margin-top: 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -320,52 +320,93 @@ h3{
   }
 }
 /*-----------footer----------*/
-.seccion-bd-container{
-  width: 80%;
-  margin: auto;
-  padding-top: 5px;
+
+.registro{
+  width: 400px;
+  background: rgb(0, 0, 255);
+  background-color: black;
+  padding: 50px;
+  margin-left: 400px;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  border-radius: 4px;
+  font-family: 'Calibri';
+  color: white;
 }
 
-.seccion-bd-container .footer-contaner-bd-grid li{
-  list-style: none;
-  font-size: 20px;
+
+
+
+.efecto{
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  opacity: .3;
+
+  position: absolute;
+  bottom: -150vh;
+
+  animation: efectos 6s linear infinite;
 }
 
-.footer__content{
-  text-align: left;
+.efecto:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 6s;
+  animation-delay: 2s;
 }
 
-.footer-contaner-bd-grid{
-  display: flex;
-  gap: 200px;
-  margin-bottom: 5%;
+.efecto:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 30%;
+  animation-duration: 6s;
+  animation-delay: 6s;
 }
 
-.footer__title{
-  font-size: 30px;
-  color: #f44336;
-  text-align: left;
+.efecto:nth-child(3){
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  animation-duration: 6s;
+  animation-delay: 4s;
 }
 
-.footer__link{
-  display: inline-block;
-  padding: 5px;
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
-  margin: -45px;
-  margin-bottom: 5px;
+.efecto:nth-child(4){
+  width: 70px;
+  height: 70px;
+  left: 75%;
+  animation-duration: 6s;
+  animation-delay: 5s;
 }
 
-.footer__link:hover{
-  color: #f44336;
+.efecto:nth-child(5){
+  width: 80px;
+  height: 80px;
+  left: 85%;
+  animation-duration: 6s;
+  animation-delay: 1s;
 }
 
-.footer__social{
-  color: #f44336;
-  padding: 5px;
-  font-size: 40px;
+@keyframes efectos {
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+  30%{
+    transform: translate(30px);
+  }
+  50%{
+    opacity: .2;
+  }
+  100%{
+    bottom: 100vh;
+    opacity: 0;
+  }
 }
+
+
+
 
 @media(max-width:700px){
   .seccion-bd-container{

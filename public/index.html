@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <!------------------Course------------------>
+    <!------------------CURSOS------------------>
     <section class="course" id="courses">
         <h1>Carreras que Ofrecemos</h1>
         <p>Bienvenido a la sección de Carreras que Ofrecemos en nuestra universidad, donde la excelencia académica se encuentra con la innovación y la vanguardia tecnológica. Estamos comprometidos con la formación de profesionales que liderarán los desafíos del mañana, abrazando la creatividad, el rigor intelectual y la aplicación práctica del conocimiento.</p>
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-     <!------------------TESTIMONALS---------------------->
+     <!---------------TESTIMONIOS---------------->
 
     <section class="testimonials" id="bloc">
         <h1>Qué Dicen Nuestros Estudiantes</h1>
@@ -140,14 +140,14 @@
         </div>
     </section>
 
-    <!--------------------CALL TO ACTION----------------------->
+    <!-------------CONTACTO------------>
 
     <section class="cta" id="contact">
         <h1>Inscríbase En Nuestros Diversos Cursos <br> Línea En Cualquier Lugar Del Mundo</h1>
         <a href="http://www.uneg.edu.ve/htmls/?t&p=portal.html#" class="hero-btn">CONTACTANOS</a>
     </section>
 
-    <!--------------------FOOTER----------------------->
+    <!------------------EFECTOS------------------->
     <div class="efectos">
         <div class="efecto"></div>
         <div class="efecto"></div>
@@ -156,6 +156,8 @@
         <div class="efecto"></div>
     </div>
 
+    <!-----------REGISTRO------------->
+
         </section>
         <section class="registro container" id="registro">
             <form action="" onsubmit="validarFormulario()">
@@ -163,6 +165,7 @@
                 <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
                 <input class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
                 <input class="form-control" name="correo" id="correo" placeholder="Ingrese su correo">
+                <input class="form-control" name="teléfono" id="teléfono" placeholder="Ingrese su teléfono">
                 <br><br>
                 <input class="btn btn-primary" type="submit" value="Registrar">
             </form>
@@ -174,6 +177,7 @@
                 var nombres = document.getElementById('nombres').value;
                 var apellidos = document.getElementById('apellidos').value;
                 var correo = document.getElementById('correo').value;
+                var correo = document.getElementById('teléfono').value;
 
                 if (nombres === '' || apellidos === '' || correo === '') {
                     alert('Por favor complete todos los campos');

@@ -324,13 +324,13 @@ h3{
 .registro{
   width: 400px;
   background: rgb(0, 0, 255);
-  background-color: black;
+  background-color: rgb(0, 0, 255);
   padding: 50px;
   margin-left: 400px;
   margin-top: 200px;
   margin-bottom: 80px;
   border-radius: 4px;
-  font-family: 'Calibri';
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 

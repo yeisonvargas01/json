@@ -129,7 +129,7 @@ nav .fa{
   width: 82%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 h1{
   font-size: 36px;
@@ -148,7 +148,6 @@ p{
 }
 .course-col{
   flex-basis: 31%;
-  height: 380px;
   background: #ccccf5;
   border-radius: 10px;
   margin-bottom: 3%;

@@ -8,7 +8,8 @@
   background-image: linear-gradient(rgba(0,0,255,1),rgba(0,0,255,1)),url(image/descarga.jpg);
   background-position: center;
   background-size: cover;
-  position: relative;   
+  position: relative;  
+  margin: 0%;
 }
 
 nav{
@@ -421,7 +422,52 @@ h3{
 }
 
 
+.seccion-bd-container{
+  width: 80%;
+  margin: auto;
+  padding-top: 5px;
+}
 
+.seccion-bd-container .footer-contaner-bd-grid li{
+  list-style: none;
+  font-size: 20px;
+}
+
+.footer__content{
+  text-align: left;
+}
+
+.footer-contaner-bd-grid{
+  display: flex;
+  gap: 200px;
+  margin-bottom: 5%;
+}
+
+.footer__title{
+  font-size: 30px;
+  color: #f44336;
+  text-align: left;
+}
+
+.footer__link{
+  display: inline-block;
+  padding: 5px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin: -45px;
+  margin-bottom: 5px;
+}
+
+.footer__link:hover{
+  color: #f44336;
+}
+
+.footer__social{
+  color: #f44336;
+  padding: 5px;
+  font-size: 40px;
+}
 
 
 @media(max-width:700px){

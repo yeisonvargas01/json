@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Universidad Computación en la nube</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
-
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <section class="header">
@@ -22,6 +24,7 @@
                   <li><a href="#facilidades">FACILIDADES</a></li>
                   <li><a href="#bloc">BLOG</a></li>
                   <li><a href="#contact">CONTACTO</a></li>
+                  <li><a href="#register">REGISTRO</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -161,21 +164,42 @@
 
     <!----------------REGISTRO----------------->
 
-        <section class="registro container" id="registro">
-            <form action="" onsubmit="validarFormulario()">
-                <h4>Formulario de registro</h4>
-                <label for="nombres">Nombres:</label>
-                <input class="form-control" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
-                <label for="apellidos">Apellidos:</label>
-                <input class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
-                <label for="correo">Correo:</label>
-                <input class="form-control" name="correo" id="correo" placeholder="Ingrese su correo">
-                <label for="correo">Teléfono:</label>
-                <input class="form-control" name="teléfono" id="teléfono" placeholder="Ingrese su teléfono">
-                <br><br>
-                <input class="btn btn-primary" type="submit" value="Registrar">
-            </form>
-        </section>
+        <div class="container">           
+            <div class="form-content">
+                <h1 id="title">Registro</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field" id="nameInput">
+                            <i class="fa-solid fa-user" ></i>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Dirección">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope" ></i>
+                            <input type="email" placeholder="Correo">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock" ></i>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+                        <p>Olvidaste tu contraseña <a href="#">click aquí</a> </p>
+                    </div>
+                    <div class="btn-field">
+                        <button id="signUp" type="button">Registro</button>
+                        <button id="singIn" type="button" class="disable" >Login</button>
+                    </div>
+                </form>
+            </div>          
+        </div>
+
+        <script src="funciones.js" ></script>
 
     <!----------------REDES SOCIALES----------------->
 
@@ -191,29 +215,6 @@
 
     <!------JavaScript---------->
 
-         <script>
-            function validarFormulario() {
-                var nombres = document.getElementById('nombres').value;
-                var apellidos = document.getElementById('apellidos').value;
-                var correo = document.getElementById('correo').value;
-                var correo = document.getElementById('teléfono').value;
-
-                if (nombres === '' || apellidos === '' || correo === '') {
-                    alert('Por favor complete todos los campos');
-                    return false;
-                }
-
-                return true;
-            }
-
-            document.getElementById('mi-enlace').addEventListener('click', function (event) {
-                event.preventDefault();
-                alert('¡Dale clic en el enlace!');
-            });
-        </script>
-
-        </div>
-    </footer>
 
     <!------JavaScript---------->
     <script>

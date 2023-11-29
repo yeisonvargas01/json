@@ -324,17 +324,6 @@ h3{
 }
 /*-----------footer----------*/
 
-.registro {
-  width: 400px;
-  background: rgb(0, 0, 255);
-  padding: 20px;
-  margin: 50px auto;
-  border-radius: 4px;
-  font-family: 'Calibri', sans-serif;
-  color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .form-control {
   width: 100%;
   padding: 8px;

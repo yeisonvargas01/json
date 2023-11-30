@@ -54,6 +54,7 @@ nav img{
   width: 100%;
   transition: 0.5s;
 }
+
 .text-box{
   width: 90%;
   color: #fff;
@@ -130,7 +131,7 @@ nav .fa{
 /*---------COURSE--------*/
 
 .course{
-  width: 82%;
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -184,8 +185,6 @@ h3{
   text-align: center;
   padding-top: 80px;
 }
-
-
 
 .campus-cul{
   flex-basis: 32%;

@@ -1,21 +1,27 @@
-let signUp = document.getElementById("signUp");
-let signIn = document.getElementById("signIn");
-let nameInput = document.getElementById("nameInput");
-let title = document.getElementById("title");
+document.getElementById('signUp').addEventListener('click', function() {
+    // Obtén los valores de los campos
+    var name = document.getElementById('nameInput').getElementsByTagName('input')[0].value;
+    var address = document.getElementById('addressInput').getElementsByTagName('input')[0].value;
+    var phone = document.getElementById('phoneInput').getElementsByTagName('input')[0].value;
+    var email = document.getElementById('emailInput').getElementsByTagName('input')[0].value;
+    var password = document.getElementById('passwordInput').getElementsByTagName('input')[0].value;
 
-signUp.onclick = function() {
-    nameInput.style.maxHeight = "0";
-    title.innerHTML = "Login";
-    signUp.classList.add("disable");
-    signIn.classList.remove("disable");
-};
+    // Validación simple (puedes personalizarla según tus necesidades)
+    if (!name || !address || !phone || !email || !password) {
+        document.getElementById('errorMessage').innerText = 'Falta llenar todos los campos.';
+        document.getElementById('successMessage').innerText = '';
+    } else {
+        // Registro exitoso, muestra el mensaje y redirige a otra página
+        document.getElementById('errorMessage').innerText = '';
+        document.getElementById('successMessage').innerText = 'Registro exitoso. Redirigiendo...';
 
-signIn.onclick = function() {
-    nameInput.style.maxHeight = "60px";
-    title.innerHTML = "Registro";
-    signUp.classList.remove("disable");
-    signIn.classList.add("disable");
-};
+        // Puedes redirigir a otra página después de un breve retraso (ejemplo de 2 segundos)
+        setTimeout(function() {
+            window.location.href = 'otra_pagina.html';
+        }, 2000);
+    }
+});
+
 
   
   

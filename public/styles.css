@@ -159,10 +159,11 @@ p{
   margin-bottom: 3%;
   padding: 22px 20px;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: all 0.2s;
 }
 .course-col:hover{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.15);
 }
 
 h3{
@@ -273,7 +274,14 @@ h3{
   padding: 25px;
   cursor: pointer;
   display: flex;
+  transition: all 0.2s;
 }
+
+.testimonial-col:hover{
+  transform: scale(1.15);
+}
+
+
 .testimonial-col img{
   height: 55px;
   margin-left: 5px;
@@ -300,7 +308,7 @@ h3{
   width: 80%;
   margin: 100px auto;
   margin-bottom: 4%;
-  background-image:linear-gradient(rgba(0,0,255,1),rgba(0,0,255,1)),url(image/banner2.jpg);
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/es-la-ingenieria.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -456,7 +464,7 @@ h3{
 }
 
 .footer__social{
-  color: #f44336;
+  color: rgba(0,0,255,1);
   padding: 5px;
   font-size: 40px;
 }

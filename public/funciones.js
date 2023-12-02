@@ -12,10 +12,7 @@ function validateForm() {
         return false;
     }
 
-    // Puedes agregar más validaciones según tus requisitos, por ejemplo, validar el formato del correo electrónico
 
-    // Aquí puedes enviar los datos a tu servidor si es necesario
-    // Simplemente devuelve true para permitir el envío del formulario
     alert('Datos enviados correctamente');
     return true;
 }

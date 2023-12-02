@@ -36,7 +36,7 @@
                 creemos en la importancia de la ética en la educación.<br> proporcionamos un ambiente de aprendizaje
                 basado en valores sólidos y principios éticos.
             </p>
-            <a href="" class="hero-btn">Visita Nuestra Pagina</a>
+            <a href="https://yeisonvargass27.wixsite.com/universidad-computac" class="hero-btn">Visita Nuestra Pagina</a>
         </div>
     </section>
 
@@ -148,7 +148,7 @@
 
     <section class="cta" id="contact">
         <h1>Inscríbase En Nuestros Diversos Cursos <br> Línea En Cualquier Lugar Del Mundo</h1>
-        <a href="http://www.uneg.edu.ve/htmls/?t&p=portal.html#" class="hero-btn">CONTACTANOS</a>
+        <a href="https://yeisonvargass27.wixsite.com/universidad-computac#" class="hero-btn">CONTACTANOS</a>
     </section>
 
     <!------------------EFECTOS------------------->
@@ -166,7 +166,7 @@
         <div class="container">           
             <div class="form-content">
                 <h1 id="title">Registro</h1>
-                <form>
+                <form id="registrationForm" onsubmit="return validateForm()">
                     <div class="input-group">
                         <div class="input-field" id="nameInput">
                             <i class="fa-solid fa-user" ></i>
@@ -199,7 +199,29 @@
             </div>          
         </div>
 
-        <script src="funciones.js" ></script>
+        <script>
+            function validateForm() {
+    // Obtener los valores de los campos
+    var name = document.getElementById('nameInput').querySelector('input').value;
+    var address = document.querySelector('input[placeholder="Dirección"]').value;
+    var phone = document.querySelector('input[placeholder="Teléfono"]').value;
+    var email = document.querySelector('input[placeholder="Correo"]').value;
+    var password = document.querySelector('input[placeholder="Contraseña"]').value;
+
+    // Validar que todos los campos estén llenos
+    if (name === '' || address === '' || phone === '' || email === '' || password === '') {
+        alert('Todos los campos son obligatorios');
+        return false;
+    }
+
+    // Puedes agregar más validaciones según tus requisitos, por ejemplo, validar el formato del correo electrónico
+
+    // Aquí puedes enviar los datos a tu servidor si es necesario
+    // Simplemente devuelve true para permitir el envío del formulario
+    alert('Datos enviados correctamente');
+    return true;
+}
+        </script>
 
     <!----------------REDES SOCIALES----------------->
 
